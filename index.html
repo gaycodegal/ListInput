@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Form Button Example</title>
+</head>
+<link rel="stylesheet" href="./resources/listinput.css" />
+<link rel="stylesheet" href="./resources/usage.css" />
+
+<body>
+  <div class="center">
+    See <a href="documentation/index.html">documentation</a> for details on use.
+    <br> The forms on this page are all set to use
+    <br> the GET method to send to the server so that
+    <br> you can see the encoded version in the url bar.
+    <br> You can use POST of course, but this is a demo.
+    <br>
+    <br>
+  </div>
+  <form id="single-sample" method="GET"></form>
+  <form id="multi-sample" method="GET"></form>
+  <form id="dynamic-sample" method="GET">
+    <input name="list1" type="listinput" />
+    <input name="breakfast" type="listinput" value='["Bacon","Eggs","Ham"]' />
+    <input name="list2" type="listinput" />
+    <input name="list3" type="listinput" />
+    <input type="submit" />
+
+  </form>
+  <script src="./resources/listinput.js"></script>
+  <script src="./resources/usage.js">
+  </script>
+</body>
+
+</html>
